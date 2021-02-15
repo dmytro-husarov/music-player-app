@@ -8,4 +8,4 @@ React, SCSS(module), XState
 
 ### Демонстрация приложения
 
-
+[https://music-player-react-app.web.app/](https://music-player-react-app.web.app/)
