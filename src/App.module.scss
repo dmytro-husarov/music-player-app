@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: #9b9b9b80 transparent;
+}
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: #9b9b9b80;
+  border-radius: 20px;
+  border: transparent;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+h1, h2 {
+  color: #363636;
+}
+h3, h4 {
+  font-weight: 400;
+  color: #646464;
+}
+.App {
+  transition: all 0.5s ease;
+}
+.LibraryActive {
+  margin-left: 30%;
+}

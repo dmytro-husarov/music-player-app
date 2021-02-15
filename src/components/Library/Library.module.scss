@@ -1,0 +1,28 @@
+.Library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20rem;
+  height: 100%;
+  background: white;
+  box-shadow: 2px 2px 50px #cccccc;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  overflow: scroll;
+  opacity: 0;
+  h2 {
+    padding: 2rem;
+  }
+  &.ActiveLibrary {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Library {
+    width: 100%;
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+}

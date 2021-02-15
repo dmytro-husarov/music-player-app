@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import classes from './App.module.scss'
+import Nav from './components/Nav/Nav'
+import Song from './components/Song/Song'
+import Player from './components/Player/Player'
+import Library from './components/Library/Library'
+import { usePlayerContext } from './context/Context'
+
 
 function App() {
+  const { matches } = usePlayerContext()
+  const clsLibraryActive = matches('library.opened') ? classes.LibraryActive : ''
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={[classes.App, clsLibraryActive].join(' ')}>
+      <Nav />
+      <Song />
+      <Player />
+      <Library />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

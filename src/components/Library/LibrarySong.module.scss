@@ -1,0 +1,41 @@
+.LibrarySong {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem 1rem 2rem;
+  transition: background-color 0.5s ease;
+  cursor: pointer;
+  img {
+    width: 30%;
+  }
+  &:hover {
+    background-color: #dedeff;
+  }
+  .SongDiscription {
+    padding-left: 1rem;
+    h3 {
+      font-size: 1rem;
+    }
+    h4 {
+      font-size: 0.7rem;
+    }
+  }
+  &.SelectedSong {
+    background-color: #b7c0db;
+  }
+}
+@media screen and (max-width: 768px) {
+  .LibrarySong {
+    img {
+      width: 25%;
+    }
+    .SongDiscription {
+      padding-left: 1.8rem;
+      h3 {
+        font-size: 1.8rem;
+      }
+      h4 {
+        font-size: 1rem;
+      }
+    }
+  }
+}
