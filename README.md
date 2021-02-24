@@ -4,7 +4,7 @@
 
 ## Cтек технологий
 
-React, SCSS(module), XState
+React, SCSS Modules, XState
 
 ### Демонстрация приложения
 
